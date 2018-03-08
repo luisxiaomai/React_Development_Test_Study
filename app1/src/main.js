@@ -35,5 +35,6 @@ var products = [
         name: 'Nexus 7'
     }
 ];
+
 ReactDOM.render(
     <App products={products}/>, document.getElementById("app"));
