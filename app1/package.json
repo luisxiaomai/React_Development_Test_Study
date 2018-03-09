@@ -15,7 +15,7 @@
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "collectCoverageFrom" : ["src/*.js"],
+    "collectCoverageFrom" : ["src/*.js","!src/main.js","!src/App.js"],
     "collectCoverage": true
   },
   "scripts": {
