@@ -1,14 +1,14 @@
-# React_Study
+# React_Development_Test_Study
 
 *A study recording of React,Redux and related testing*
 
 ## Table of Contents
 
-  1. [Setup](#Setup)
-  1. [Development](#Development)
-  1. [Testing](#Testing)
+  1. [Setup](#setup)
+  1. [Development](#development)
+  1. [Testing](#testing)
  
-## Setup project
+## Setup
 
   - **Way1** 
 
