@@ -8,7 +8,7 @@
   1. [Development](#Development)
   1. [Testing](#Testing)
  
-## Setup project
+## Setup
 
   - **Way1** 
 
