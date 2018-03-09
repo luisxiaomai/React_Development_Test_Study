@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator should render corectly 1`] = `
+<div
+  className="calculator"
+>
+  <fieldset>
+    <legend>
+      Input 
+      Celsius
+      : 
+    </legend>
+    <input
+      onChange={[Function]}
+      value=""
+    />
+  </fieldset>
+  <fieldset>
+    <legend>
+      Input 
+      Fahrenheit
+      : 
+    </legend>
+    <input
+      onChange={[Function]}
+      value=""
+    />
+  </fieldset>
+  <p>
+     water not fired
+  </p>
+</div>
+`;
