@@ -36,9 +36,6 @@
     `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components.
 
     `Full DOM rendering` is ideal for use cases where you have components that may interact with DOM APIs or need to test components that are wrapped in higher order components.
-    
-  <div align=center ><img src="https://github.com/luisxiaomai/Images/blob/master/React-Development-Test/test_result.png"/></div>
-
 
   - **CSS/Style Testing**
   
