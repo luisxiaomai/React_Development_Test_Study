@@ -4,9 +4,9 @@
 
 ## Table of Contents
 
-  1. [Setup](#Setup)
-  1. [Development](#Development)
-  1. [Testing](#Testing)
+  1. [Setup](#setup)
+  1. [Development](#development)
+  1. [Testing](#testing)
  
 ## Setup
 
