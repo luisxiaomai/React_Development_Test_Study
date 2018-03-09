@@ -1,4 +1,4 @@
-# React_Study
+# React_Development_Test_Study
 
 *A study recording of React,Redux and related testing*
 
