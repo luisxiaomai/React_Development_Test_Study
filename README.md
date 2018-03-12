@@ -24,18 +24,21 @@
 
 ## Testing
 
-  - **Structural Testing** 
+  - **Unit Testing** 
 
-      Focus on the structure of the UI and how it’s laid out. [Jest Snapshot Test](https://facebook.github.io/jest)
+      Unit tests test units of a codebase. In React context, it mostly can be component, function... [Enzyme](https://github.com/airbnb/enzyme)
+      
+      `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components. Shallow rendering means we render the component one level deep. This way we can make sure we’re only testing the component, our unit, and not a child component several levels down.
 
   - **Interaction Testing** 
 
     UI is all about interacting with the user. We do this with a bunch of UI elements, such as buttons, links, and input elements. With interaction testing, we need to test if they are working properly. [Enzyme](https://github.com/airbnb/enzyme)
-
-
-    `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components.
-
+    
     `Full DOM rendering` is ideal for use cases where you have components that may interact with DOM APIs or need to test components that are wrapped in higher order components.
+
+  - **Structural Testing** 
+
+      Focus on the structure of the UI and how it’s laid out. [Jest Snapshot Test](https://facebook.github.io/jest)
 
   - **CSS/Style Testing**
   
