@@ -24,12 +24,12 @@
 
 ## Testing
 
-  - **Unit Testing** 
+  - **Unit Testing** 
 
-    Unit tests test units of a codebase. In React context, it mostly can be component, function... 
-      
-    `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components. Shallow rendering means we render the component one level deep. This way we can make sure we’re only testing the component, our unit, and not a child component several levels down.
-
+    Unit tests test units of a codebase. In React context, it mostly can be component, function. [Enzyme](https://github.com/airbnb/enzyme)
+    
+   `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components. Shallow rendering means we render the component one level deep. This way we can make sure we’re only testing the component, our unit, and not a child component several levels down.
+   
   - **Interaction Testing** 
 
     UI is all about interacting with the user. We do this with a bunch of UI elements, such as buttons, links, and input elements. With interaction testing, we need to test if they are working properly. [Enzyme](https://github.com/airbnb/enzyme)
@@ -58,7 +58,9 @@
      Runs tests against your application running in a real browser, interacting with it as a user would
 
     * [Selenium](https://www.seleniumhq.org/)
-
+    
+    * [nightmare](https://github.com/segmentio/nightmare/)
+    
   - **Manual Test** 
 
     Since we are building UI for humans, we must also manually test them to see how they feel. Another reason for manual testing is for the better user experience. We should always try to test our UI with the naked eye
