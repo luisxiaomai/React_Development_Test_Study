@@ -1,15 +1,24 @@
 import React from 'react'
 import style from "./Calculator.css"
-import {toCelsius,toFahrenheit,tryConvert} from './Utils.js'
+import {toCelsius,toFahrenheit,tryConvert} from './../utils/Utils'
 
-  
+  /*
   function BoilingVerdict(props){
     if(props.celsius >= 100){
-      return <p> water fired</p>
+      return <p> water fired</p>;
     }
-    return <p> water not fired</p>
+    return <p> water not fired</p>;
 
   }
+  */
+
+  const BoilingVerdict = ({celsius}) => {
+    if(celsius >= 100){
+      return <p> water fired</p>;
+    }
+    return <p> water not fired</p>;
+  }
+
   class TemperatureInput extends React.Component{
     constructor(props){
       super(props);

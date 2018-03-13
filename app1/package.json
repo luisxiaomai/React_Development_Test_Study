@@ -15,7 +15,11 @@
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "collectCoverageFrom" : ["src/*.js","!src/main.js","!src/App.js"],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/main.js",
+      "!src/App.js"
+    ],
     "collectCoverage": true
   },
   "scripts": {
@@ -26,8 +30,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

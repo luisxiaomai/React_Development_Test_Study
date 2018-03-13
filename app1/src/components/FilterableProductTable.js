@@ -36,9 +36,9 @@ class ProductTable extends React.Component {
                     return;
                 }
                 if (product.category !== lastCategory) {
-                    rows.push(<ProductCategoryRow category={product.category} key={product.category}/>);
+                    rows.push(<ProductCategoryRow category={product.category} key={product.category} />);
                 }
-                rows.push(<ProductRow product={product} key={product.name}/>);
+                rows.push(<ProductRow product={product} key={product.name} />);
                 lastCategory = product.category;
             });
         return (
@@ -83,12 +83,12 @@ class SearchBar extends React.Component {
                     className={style.searchField}
                     placeholder="Search..."
                     value={this.props.filterText}
-                    onChange={this.handleFilterTextInputChange}/>
+                    onChange={this.handleFilterTextInputChange} />
                 <p>
                     <input
                         type="checkbox"
                         checked={this.props.inStockOnly}
-                        onClick={this.handleInStockInputChange}/> {'  '}
+                        onClick={this.handleInStockInputChange} /> {'  '}
                     Only show products in stock
                 </p>
             </form>
@@ -103,19 +103,15 @@ export default class FilterableProductTable extends React.Component {
             filterText: "",
             inStockOnly: false
         };
-        this.handleFilterTextInput = this
-            .handleFilterTextInput
-            .bind(this);
-        this.handleInStockInput = this
-            .handleInStockInput
-            .bind(this);
+        this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
+        this.handleInStockInput = this.handleInStockInput.bind(this);
     }
     handleFilterTextInput(filterText) {
-        this.setState({filterText});
+        this.setState({ filterText });
     }
     handleInStockInput() {
         this.setState(prevState => ({
-            inStockOnly:!prevState.inStockOnly
+            inStockOnly: !prevState.inStockOnly
         }));
     }
     render() {
@@ -125,11 +121,11 @@ export default class FilterableProductTable extends React.Component {
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
                     onFilterTextInput={this.handleFilterTextInput}
-                    onInstockInput={this.handleInStockInput}/>
+                    onInstockInput={this.handleInStockInput} />
                 <ProductTable
                     products={this.props.products}
                     filterText={this.state.filterText}
-                    inStockOnly={this.state.inStockOnly}/>
+                    inStockOnly={this.state.inStockOnly} />
             </div>
         );
     }
