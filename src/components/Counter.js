@@ -6,15 +6,15 @@ class Counter extends Component {
         super(props);
     }
     render(){
-        const {value, onIncrement, onDecrement} = this.props; //destructuring
+        const {counter, increment, decrement} = this.props; //destructuring
         return (
             <p>
-                Clicked: {value} times
+                Clicked: {counter} times
                 {' '}
-                <button onClick={onIncrement}>
+                <button onClick={increment}>
                     +
                 </button>
-                <button onClick={onDecrement}>
+                <button onClick={decrement}>
                     -
                 </button>               
             </p>
@@ -23,9 +23,9 @@ class Counter extends Component {
 }
 
 Counter.prototypes = {
-    value:PropTypes.number.isRequired,
-    onIncrement:PropTypes.func.isRequired,
-    onDecrement:PropTypes.func.isRequired
+    counter:PropTypes.number.isRequired,
+    increment:PropTypes.func.isRequired,
+    decrement:PropTypes.func.isRequired
 }
 
 export default Counter;

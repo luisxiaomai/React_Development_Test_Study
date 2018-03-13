@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App.js'
+import {Provider} from 'react-redux'
 import { createStore } from 'redux'
 import reducer from './reducers/index'
+import App from './App'
 
 var products = [
     {
@@ -40,9 +41,9 @@ var products = [
 
 const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 const render = () => ReactDOM.render(
-    <App products={products} value={store.getState()}
-        onIncrement={() => store.dispatch({ type: 'INCREMENT' })}
-        onDecrement={() => store.dispatch({ type: 'DECREMENT' })} />, document.getElementById("app")
+    <Provider store={store}>
+        <App products={products} />
+    </Provider>, 
+    document.getElementById("app")
 );
 render();
-store.subscribe(render);

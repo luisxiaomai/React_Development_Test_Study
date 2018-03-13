@@ -1,9 +1,9 @@
-export default (state=0, action) => {
+export default (state={counter:0}, action) => {
     switch (action.type){
         case "INCREMENT":
-            return state + 1;
+            return Object.assign({},state,{counter:state.counter+1});
         case "DECREMENT":
-            return state - 1;
+            return Object.assign({},state,{counter:state.counter-1});
         default:
             return state;
     }
