@@ -36,7 +36,14 @@ describe('Connected Components', () => {
         container.find("button").at(0).simulate('click');
         expect(store.getActions()).toEqual([{ type: 'INCREMENT' }]);
     });
-
+    it('should dispatch decrement when click - button', () => {
+        const wrapper = mount(<Provider store={store}>
+            <CounterContainer />
+          </Provider>);
+        const container = wrapper.find(CounterContainer);
+        container.find("button").at(1).simulate('click');
+        expect(store.getActions()).toEqual([{ type: 'DECREMENT' }]);
+    });
 
     
 });
