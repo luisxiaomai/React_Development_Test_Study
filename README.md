@@ -4,10 +4,11 @@
 
 ## Table of Contents
 
-  1. [Setup](#setup)
-  1. [Development](#development)
-  1. [Testing](#testing)
-  1. [Refs](#refs)
+  - [Setup](#setup)
+  - [Development](#development)
+  - [Testing](#testing)
+  - [Refs](#refs)
+  
 ## Setup
 
   - **Way1** 
@@ -64,11 +65,14 @@
     Since we are building UI for humans, we must also manually test them to see how they feel. Another reason for manual testing is for the better user experience. We should always try to test our UI with the naked eye
 
   
-  ## Refs
+  
+ ## Refs
+  
+   * [Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
+    
+   * [Enzyme](https://github.com/airbnb/enzyme)
+       
+   * [Tutorial-React-Testing](https://facebook.github.io/jest/docs/en/tutorial-react.html)
 
-    * [Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
-    
-    * [enzyme](https://github.com/airbnb/enzyme)
-    
-    * [Redux Test](https://redux.js.org/recipes/writing-tests)
+   * [Redux Test](https://redux.js.org/recipes/writing-tests)
 
