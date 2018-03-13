@@ -52,7 +52,7 @@
     * [Happo](https://github.com/Galooshi/happo)
 
 
-  - **E2E Automation**
+  - **E2E Testing**
 
      Runs tests against your application running in a real browser, interacting with it as a user would.
 
@@ -60,7 +60,7 @@
     
     * [Nightmare](https://github.com/segmentio/nightmare/)
     
-  - **Manual Test** 
+  - **Manual Testing** 
 
     Since we are building UI for humans, we must also manually test them to see how they feel. Another reason for manual testing is for the better user experience. We should always try to test our UI with the naked eye.
     
