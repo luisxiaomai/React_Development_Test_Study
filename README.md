@@ -74,4 +74,6 @@
    * [Tutorial-React-Testing](https://facebook.github.io/jest/docs/en/tutorial-react.html)
 
    * [Redux Test](https://redux.js.org/recipes/writing-tests)
+   
+   * [Jest Debug in VS](https://github.com/Microsoft/vscode-recipes/tree/master/debugging-jest-tests)
 
