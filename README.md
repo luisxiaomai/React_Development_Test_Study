@@ -11,7 +11,7 @@
   
 ## Setup
 
-  - **Way1** 
+  - **xxx** 
 
     
 ## Development
@@ -25,7 +25,7 @@
 
     Unit tests test units of a codebase. In react/redux context, they mostly can be components, action creators, reducers, middlewares... 
     
-    Recommend [Jest](https://facebook.github.io/jest) as the testing engine for most unit test and [Enzyme](https://github.com/airbnb/enzyme) as the component testing utilities.
+    Recommend [Jest](https://facebook.github.io/jest) as the testing engine for most unit tests and [Enzyme](https://github.com/airbnb/enzyme) as the component testing utilities.
     
     `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components. Shallow rendering means we render the component one level deep. This way we can make sure we’re only testing the component, our unit, and not a child component several levels down.
    
@@ -54,7 +54,7 @@
 
   - **E2E Automation**
 
-     Runs tests against your application running in a real browser, interacting with it as a user would
+     Runs tests against your application running in a real browser, interacting with it as a user would.
 
     * [Selenium](https://www.seleniumhq.org/)
     
@@ -62,9 +62,8 @@
     
   - **Manual Test** 
 
-    Since we are building UI for humans, we must also manually test them to see how they feel. Another reason for manual testing is for the better user experience. We should always try to test our UI with the naked eye
-
-  
+    Since we are building UI for humans, we must also manually test them to see how they feel. Another reason for manual testing is for the better user experience. We should always try to test our UI with the naked eye.
+    
   
  ## Refs
   
