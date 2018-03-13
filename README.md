@@ -4,38 +4,40 @@
 
 ## Table of Contents
 
-  1. [Setup](#setup)
-  1. [Development](#development)
-  1. [Testing](#testing)
- 
+  - [Setup](#setup)
+  - [Development](#development)
+  - [Testing](#testing)
+  - [Refs](#refs)
+  
 ## Setup
 
-  - **Way1** 
+  - **xxx** 
 
     
-  **[⬆ back to top](#table-of-contents)**
-
 ## Development
 
   - **xxx** 
 
     
-  **[⬆ back to top](#table-of-contents)**
-
 ## Testing
 
-  - **Structural Testing** 
+  - **Unit Testing** 
 
-      Focus on the structure of the UI and how it’s laid out. [Jest Snapshot Test](https://facebook.github.io/jest)
-
+    Unit tests test units of a codebase. In react/redux context, they mostly can be components, action creators, reducers, middlewares... 
+    
+    Recommend [Jest](https://facebook.github.io/jest) as the testing engine for most unit tests and [Enzyme](https://github.com/airbnb/enzyme) as the component testing utilities.
+    
+    `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components. Shallow rendering means we render the component one level deep. This way we can make sure we’re only testing the component, our unit, and not a child component several levels down.
+   
   - **Interaction Testing** 
 
     UI is all about interacting with the user. We do this with a bunch of UI elements, such as buttons, links, and input elements. With interaction testing, we need to test if they are working properly. [Enzyme](https://github.com/airbnb/enzyme)
-
-
-    `Shallow rendering` is useful to constrain yourself to testing a component as a unit, and to ensure that your tests aren't indirectly asserting on behavior of child components.
-
+    
     `Full DOM rendering` is ideal for use cases where you have components that may interact with DOM APIs or need to test components that are wrapped in higher order components.
+
+  - **Structural Testing** 
+
+    Focus on the structure of the UI and how it’s laid out. [Jest Snapshot Test](https://facebook.github.io/jest/docs/en/snapshot-testing.html)
 
   - **CSS/Style Testing**
   
@@ -52,12 +54,24 @@
 
   - **E2E Automation**
 
-     Runs tests against your application running in a real browser, interacting with it as a user would
+     Runs tests against your application running in a real browser, interacting with it as a user would.
 
     * [Selenium](https://www.seleniumhq.org/)
-
+    
+    * [Nightmare](https://github.com/segmentio/nightmare/)
+    
   - **Manual Test** 
 
-    Since we are building UI for humans, we must also manually test them to see how they feel. Another reason for manual testing is for the better user experience. We should always try to test our UI with the naked eye
+    Since we are building UI for humans, we must also manually test them to see how they feel. Another reason for manual testing is for the better user experience. We should always try to test our UI with the naked eye.
+    
+  
+ ## Refs
+  
+   * [Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
+    
+   * [Enzyme](https://github.com/airbnb/enzyme)
+       
+   * [Tutorial-React-Testing](https://facebook.github.io/jest/docs/en/tutorial-react.html)
 
-  **[⬆ back to top](#table-of-contents)**
+   * [Redux Test](https://redux.js.org/recipes/writing-tests)
+
