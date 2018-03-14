@@ -1,4 +1,4 @@
-import * as actions from './counter'
+import * as actions from './index'
 
 describe('actions', () => {
     it('should create increment action', () => {

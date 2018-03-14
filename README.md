@@ -11,12 +11,15 @@
   
 ## Setup
 
-  - **xxx** 
+  * [Use create react app](https://github.com/facebook/create-react-app)
 
-    
+  * [Create from scratch](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
+
 ## Development
 
-  - **xxx** 
+  * [React Basics](https://reactjs.org/docs/hello-world.html)
+
+  * [Redux Basics](https://redux.js.org/basics)
 
     
 ## Testing

@@ -1,10 +1,10 @@
-export default (state={counter:0}, action) => {
-    switch (action.type){
-        case "INCREMENT":
-            return Object.assign({},state,{counter:state.counter+1});
-        case "DECREMENT":
-            return Object.assign({},state,{counter:state.counter-1});
-        default:
-            return state;
-    }
-}
+import {combineReducers} from 'redux'
+import todos from './todos'
+import visibilityFilter from './visibilityFilter'
+import counter from './counter'
+
+export default combineReducers({
+    todos,
+    visibilityFilter,
+    counter
+})
