@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FilterableProductTable should render corectly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "backgroundColor": "white",
+      "margin": 15,
+      "padding": 15,
+    }
+  }
+>
   <form>
     <input
       className={undefined}
