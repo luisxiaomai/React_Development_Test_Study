@@ -14,7 +14,7 @@ class App extends Component {
         <FilterableProductTable products={this.props.products} />
         <Calculator />
         <CounterContainer />
-        <div>
+        <div style={{ backgroundColor: 'white', padding: 15, margin: 15}}>
           <AddTodo />
           <VisibleTodoList />
           <Footer />

@@ -116,7 +116,7 @@ export default class FilterableProductTable extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div style={{ backgroundColor: 'white', padding: 15, margin: 15}}>
                 <SearchBar
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}

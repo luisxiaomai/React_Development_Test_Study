@@ -8,7 +8,7 @@ class Counter extends Component {
     render(){
         const {counter, increment, decrement} = this.props; //destructuring
         return (
-            <p>
+            <p style={{ backgroundColor: 'white', padding: 15, margin: 15}}>
                 Clicked: {counter} times
                 {' '}
                 <button onClick={increment}>
