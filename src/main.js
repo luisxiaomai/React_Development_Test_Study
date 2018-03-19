@@ -43,7 +43,9 @@ var products = [
 const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 const render = () => ReactDOM.render(
     <Provider store={store}>
-        <App products={products} />
+        <BrowserRouter>
+            <App products={products} />
+        </BrowserRouter>
     </Provider>, 
     document.getElementById("app")
 );
