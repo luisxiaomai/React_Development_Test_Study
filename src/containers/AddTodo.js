@@ -28,7 +28,6 @@ class AddTodo extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
-    let input;
   }
 
   handleSubmit(e){
@@ -39,7 +38,7 @@ class AddTodo extends React.Component {
     this.props.dispatch(addTodo(this.input.value))
     this.input.value = ''
   }
-
+  
   render() {
     return (
       <div>
