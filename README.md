@@ -21,7 +21,8 @@
 
   * [Redux Basics](https://redux.js.org/basics)
 
-    
+  * [Router Basics](https://reacttraining.com/react-router/web/example/basic)
+
 ## Testing
 
   - **Unit Testing** 
