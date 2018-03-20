@@ -4,7 +4,7 @@ import {Provider} from 'react-redux'
 import { createStore } from 'redux'
 import reducer from './reducers/index'
 import App from './App'
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
 var products = [
     {
@@ -43,9 +43,9 @@ var products = [
 const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 const render = () => ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter>
+        <Router>
             <App products={products} />
-        </BrowserRouter>
+        </Router>
     </Provider>, 
     document.getElementById("app")
 );
