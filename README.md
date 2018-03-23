@@ -1,7 +1,7 @@
 # React_Development_Test_Study
 
 *A study recording of React,Redux and related testing. 
-Because this is testing driven study, its content will be more focus on testing*
+Because this is testing driven study, its content will be more focus on testing.*
 
 ## Table of Contents
 
