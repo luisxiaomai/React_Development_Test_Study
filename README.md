@@ -1,6 +1,8 @@
 # React_Development_Test_Study
 
-*A study recording of React,Redux and related testing*
+*A study recording of React,Redux and related testing. 
+Because this is testing driven study, its content will be more focus on testing.*
+> 🎉🎉🎉  [ReactNative_Development_Test_Study](https://github.com/luisxiaomai/ReactNative_Development_Test_Study)
 
 ## Table of Contents
 
@@ -9,7 +11,7 @@
   - [Testing](#testing)
   - [Refs](#refs)
   
-## Setup
+## Setup.
 
   * [Use create react app](https://github.com/facebook/create-react-app)
 
