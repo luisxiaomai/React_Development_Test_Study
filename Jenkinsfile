@@ -18,7 +18,7 @@ pipeline {
       }
       post {
         always{        
-          archiveArtifacts 'coverage'
+          archiveArtifacts 'coverage/**/*.*'
         }
         success {
           // publish html
