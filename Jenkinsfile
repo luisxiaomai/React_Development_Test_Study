@@ -29,7 +29,6 @@ pipeline {
           reportFiles: 'lcov-report/index.html',
           reportName: 'Coverage Report'
         ]
-      }
     }
   }
 }
