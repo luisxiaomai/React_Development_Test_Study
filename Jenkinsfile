@@ -32,7 +32,14 @@ pipeline {
   }
   post {
     always{
-        junit 'coverage/clover.xml'
+        publishHTML target: [
+              allowMissing: false,
+              alwaysLinkToLastBuild: false,
+              keepAll: true,
+              reportDir: 'dist/test-report',
+              reportFiles: 'report.html',
+              reportName: 'Test Report'
+            ]
     }
   }
 }
