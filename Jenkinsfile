@@ -17,9 +17,11 @@ pipeline {
         sh 'ls'
       }
       post {
+        /*
         always{        
           archiveArtifacts 'coverage/**/*.*'
         }
+        */
         success {
           // publish html
           publishHTML target: [
