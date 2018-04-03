@@ -16,6 +16,7 @@ pipeline {
         sh 'npm test'
       }
       post {
+        archiveArtifacts 'covergae'
         success {
           // publish html
           publishHTML target: [
