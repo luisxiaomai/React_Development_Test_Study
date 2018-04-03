@@ -30,9 +30,5 @@ pipeline {
       }
     }
   }
-  post {
-    always{
-        junit 'coverage/clover.xml'
-    }
-  }
+ 
 }
