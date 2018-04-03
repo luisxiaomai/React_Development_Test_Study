@@ -23,12 +23,16 @@ pipeline {
               alwaysLinkToLastBuild: false,
               keepAll: true,
               reportDir: 'coverage',
-              reportFiles: 'Icov-report/index.html',
+              reportFiles: 'lcov-report/index.html',
               reportName: 'Coverage Report'
             ]
         }
       }
     }
   }
- 
+  post {
+    always{
+        junit 'coverage/clover.xml'
+    }
+  }
 }
