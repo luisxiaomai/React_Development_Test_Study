@@ -22,8 +22,8 @@ pipeline {
               allowMissing: false,
               alwaysLinkToLastBuild: false,
               keepAll: true,
+              reportDir: 'coverage',
               reportFiles: 'Icov-report/index.html',
-              reportFiles: 'index.html',
               reportName: 'Coverage Report'
             ]
         }
