@@ -19,7 +19,7 @@ pipeline {
 
   }
   post {
-    success {
+    always {
       // publish html
       publishHTML target: [
           allowMissing: false,
