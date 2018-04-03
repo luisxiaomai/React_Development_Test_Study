@@ -18,14 +18,14 @@ pipeline {
       post {
         success {
           // publish html
-          publishHTML([
+          publishHTML target: [
               allowMissing: false,
               alwaysLinkToLastBuild: false,
               keepAll: true,
-              reportDir: 'Icov-report/index.html',
+              reportFiles: 'Icov-report/index.html,
               reportFiles: 'index.html',
               reportName: 'Coverage Report'
-            ])
+            ]
         }
       }
     }
