@@ -32,7 +32,7 @@ pipeline {
   }
   post {
     always{
-        junit '*.xml'
+        junit 'coverage/*.xml'
     }
   }
 }
