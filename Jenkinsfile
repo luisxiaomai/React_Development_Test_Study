@@ -19,14 +19,15 @@ pipeline {
       post {
         success {
           // publish html
-          publishHTML target: [
-              allowMissing: false,
-              alwaysLinkToLastBuild: false,
-              keepAll: true,
-              reportDir: 'coverage',
-              reportFiles: 'lcov-report/index.html',
-              reportName: 'Coverage Report'
-            ]
+          publishHTML([
+            allowMissing: false, 
+            alwaysLinkToLastBuild: false, 
+            keepAll: false, 
+            reportDir: 'coverage', 
+            reportFiles: 'lcov-report/index.html',
+            reportName: 'Coverage Report', 
+            reportTitles: ''
+          ])
         }
       }
     }
