@@ -14,6 +14,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'npm test'
+        sh 'ls'
       }
       post {
         success {
@@ -23,7 +24,7 @@ pipeline {
               alwaysLinkToLastBuild: false,
               keepAll: true,
               reportDir: 'coverage',
-              reportFiles: 'cov-report/index.html',
+              reportFiles: 'lcov-report/index.html',
               reportName: 'Coverage Report'
             ]
         }
