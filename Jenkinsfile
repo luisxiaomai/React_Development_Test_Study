@@ -22,7 +22,7 @@ pipeline {
           publishHTML([
             allowMissing: false, 
             alwaysLinkToLastBuild: false, 
-            keepAll: false, 
+            keepAll: true, 
             reportDir: 'coverage', 
             reportFiles: 'lcov-report/index.html',
             reportName: 'Coverage Report', 
