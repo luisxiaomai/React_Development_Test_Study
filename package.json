@@ -4,7 +4,7 @@
   "description": "create react app project from scratch",
   "main": "index.js",
   "jest": {
-    "testResultsProcessor": "jest-report",
+    "testResultsProcessor": "jest-junit",
     "moduleFileExtensions": [
       "js",
       "jsx"
@@ -48,6 +48,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "html-webpack-plugin": "^3.0.6",
     "jest": "^22.4.2",
+    "jest-junit": "^3.6.0",
     "jest-report": "^0.1.11",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",

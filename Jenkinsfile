@@ -23,7 +23,7 @@ pipeline {
               alwaysLinkToLastBuild: false,
               keepAll: true,
               reportDir: 'coverage',
-              reportFiles: 'lcov-report/index.html',
+              reportFiles: 'cov-report/index.html',
               reportName: 'Coverage Report'
             ]
         }
@@ -32,14 +32,7 @@ pipeline {
   }
   post {
     always{
-        publishHTML target: [
-              allowMissing: false,
-              alwaysLinkToLastBuild: false,
-              keepAll: true,
-              reportDir: 'dist/test-report',
-              reportFiles: 'reporter.html',
-              reportName: 'Test Report'
-            ]
+        junit 'junit.xml'
     }
   }
 }
