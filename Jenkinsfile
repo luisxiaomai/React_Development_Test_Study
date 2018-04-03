@@ -16,7 +16,7 @@ pipeline {
         sh 'npm test'
         sh 'ls'
       }
-
+    }
   }
   post {
     always {
