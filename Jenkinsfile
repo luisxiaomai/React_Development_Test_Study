@@ -16,7 +16,9 @@ pipeline {
         sh 'npm test'
       }
       post {
-        archiveArtifacts 'covergae'
+        always{        
+          archiveArtifacts 'covergae'
+        }
         success {
           // publish html
           publishHTML target: [
