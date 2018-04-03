@@ -22,7 +22,7 @@ pipeline {
               allowMissing: false,
               alwaysLinkToLastBuild: false,
               keepAll: true,
-              reportFiles: 'Icov-report/index.html,
+              reportFiles: 'Icov-report/index.html',
               reportFiles: 'index.html',
               reportName: 'Coverage Report'
             ]
