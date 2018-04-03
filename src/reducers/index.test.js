@@ -9,7 +9,7 @@ describe('reducers', () => {
             expect(reducer({counter:1},{type:'INCREMENT'}).counter).toBe(2);
         });
         it('should handle DECREMENT action', () => {
-            expect(reducer({counter:1},{type:'DECREMENT'}).counter).toBe(0);
+            expect(reducer({counter:1},{type:'DECREMENT'}).counter).toBe(1);
         });
     });
 });
