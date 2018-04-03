@@ -37,7 +37,7 @@ pipeline {
               alwaysLinkToLastBuild: false,
               keepAll: true,
               reportDir: 'dist/test-report',
-              reportFiles: 'report.html',
+              reportFiles: 'reporter.html',
               reportName: 'Test Report'
             ]
     }
