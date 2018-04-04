@@ -1,6 +1,9 @@
 pipeline {
   agent {
-    label 'node-mac'
+    docker {
+      image 'node:6-alpine'
+      label 'node-env'
+    }
   }
   stages {
     stage('Build') {
