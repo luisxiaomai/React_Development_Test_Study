@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'node-env'
+    label 'node-mac'
   }
   stages {
     stage('Build') {
